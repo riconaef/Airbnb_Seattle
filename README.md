@@ -45,13 +45,14 @@ Part III:
 To evaluate the importance of other features, a linear Regression model from the sklearn package has been used.
 The data had to be cleaned first with the function "clean_data". This function takes a dataframe and a integer called "flag".
 
-The first step is optional. If the flag variable is set to 1, the function "separator" is used. 
-This function will separate the column "amenities" into different columns. The problem with the "amenities" column is that there
-are plenty of variables packed into one string for each row, without any order. The function returns a new dataframe containing 
-only the "amenities" column packed into an ordered dataframe. This new dataframe has a column for each amenity. For all accommodations
-it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe. 
+1.  The first step is optional. If the flag variable is set to 1, the function "separator" is used. 
+    This function will separate the column "amenities" into different columns. The problem with the "amenities" column is that there
+    are plenty of variables packed into one string for each row, without any order. The function returns a new dataframe containing 
+    only the "amenities" column packed into an ordered dataframe. This new dataframe has a column for each amenity. For all accommodations
+    it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe. 
 
-
+2.  Some columns contain an "t" or "f". These are change into 1 and 0 which are easier to handle.
+3.  
 
 
 
