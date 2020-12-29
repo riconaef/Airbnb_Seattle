@@ -76,4 +76,4 @@ these coefficient are plotted in a bar plot.
 
 ## Results<a name="results"></a>
 
-The main findings of the results can also be found [here](https://medium.com/p/c60e4589a099/edit).
+The main findings of the results can also be found [here](https://naefrico.medium.com/what-drives-prices-at-airbnb-accommodations-c60e4589a099).
