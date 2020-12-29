@@ -70,7 +70,7 @@ The data had to be cleaned first with the function "clean_data". This function t
 
 The return of the function are the X and y matrix.
 The linear Regression model is build with normalized data.
-At the end the function "coef_weights" is used, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
+At the end the function "coef_weights" from the class of Udacity, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
 these coefficient are plotted in a bar plot. 
 
 
