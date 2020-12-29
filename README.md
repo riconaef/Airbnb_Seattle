@@ -52,7 +52,8 @@ The data had to be cleaned first with the function "clean_data". This function t
     This function will separate the column "amenities" into different columns. The problem with the "amenities" column is that there
     are plenty of variables packed into one string for each row, without any order. The function returns a new dataframe containing 
     only the "amenities" column packed into an ordered dataframe. This new dataframe has a column for each amenity. For all accommodations
-    it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe. 
+    it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe.
+    If the flag is set to 0, the amenities are not taken into the model. 
 
 2.  Some columns contain an "t" or "f". These are change into 1 and 0 which are easier to handle.
 3.  As befor the price columns have to be changed from strings to floats
