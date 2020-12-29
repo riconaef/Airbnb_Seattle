@@ -21,7 +21,7 @@ The used data can also be downloaded here. The "calendar" file is a large file, 
 
 ## File Descriptions <a name="files"></a>
 
-Part I:\n
+Part I:<\n>
 The dataframe "listings" has the shape of 3818 rows × 92 columns. To have an image of the spatial distribution I chose
 the coordinate data "latitude" and "longitude". By rounding to 2 digits the accommodations can be grouped with
 same coordinates. 
