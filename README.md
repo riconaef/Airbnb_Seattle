@@ -21,7 +21,8 @@ The used data can also be downloaded here. The "calendar" file is a large file, 
 
 ## File Descriptions <a name="files"></a>
 
-Part I:<\n>
+Part I:
+
 The dataframe "listings" has the shape of 3818 rows × 92 columns. To have an image of the spatial distribution I chose
 the coordinate data "latitude" and "longitude". By rounding to 2 digits the accommodations can be grouped with
 same coordinates. 
@@ -31,6 +32,7 @@ With the use of a pivot-table the data are grouped. The value of the pivot-table
 the mean function was applied to calculate the average prices for accommodations with the same coordinates. 
 
 Part II:
+
 For this step the prepared dataframe from Part I is used with an additional dataframe "calendar" containing the bookings of 
 all airbnb's. This new dataframe has the shape 1393570 rows × 4 columns. 
 
@@ -42,6 +44,7 @@ After the two dataframes are merged together on the id column. The obtained data
 their location. Again a pivot-table is created similar to Part I.
 
 Part III:
+
 To evaluate the importance of other features, a linear Regression model from the sklearn package has been used.
 The data had to be cleaned first with the function "clean_data". This function takes a dataframe and a integer called "flag".
 
