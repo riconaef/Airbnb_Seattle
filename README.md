@@ -52,8 +52,22 @@ The data had to be cleaned first with the function "clean_data". This function t
     it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe. 
 
 2.  Some columns contain an "t" or "f". These are change into 1 and 0 which are easier to handle.
-3.  
+3.  As befor the price columns have to be changed from strings to floats
+4.  Similar as step 3 with the percentage column
+5.  All columns which contain the same element for all rows are dropped, since this columns are not delivering any information.
+6.  In contrast to step 5, there are also many object columns which contain a different element for each row such as "description".
+    So all object columns were dropped.
+7.  If any accommodations have no price values, these rows are dropped. y is created
+8.  Drop all columns which have more than 75% NAN.
+9.  Drop all price columns. There are two other price columns, the "weekly_price" and "monthly_price", which are not further considered here.
+    Additionally, the columns "host_listing_count" and "host_total_listings_count" are dropped, because these cause difficulties with the 
+    machine learning algorithm later. The reason for it might be that these data contain some very high values compared to others (outliers)
+10. For the final step NAN in the int and float columns are filled with the average of the column. 
 
+The return of the function is the X and y matrix.
+The linear Regression model is build in which the data are normalized.
+At the end the function "coef_weights" is used, which returns a dataframe of the coefficients for each feature. To better visualize, 
+these coefficient are plotted in a bar plot. 
 
 
 ## Results<a name="results"></a>
