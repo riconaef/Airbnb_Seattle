@@ -45,7 +45,7 @@ With the use of a pivot-table the data are grouped. The value of the pivot-table
 Additionally the mean function was applied to calculate the average prices for accommodations with the same coordinates.
 
 #### Part III:
-To clean the data the function "clean_data" is used. This function takes a dataframe and a integer called "flag". The following step describe
+To clean the data the function "clean_data" is used. This function takes a dataframe and a integer called "flag". The following steps describe
 what the function is doing and why. 
 
 1.  The first step is optional. If the flag variable is set to 1, the function "separator" is used. 
@@ -71,7 +71,7 @@ The return of the function are the X and y matrix.
 
 ### Data Modeling:
 
-A linear Regression model is build with normalized data.
+For Part III a linear Regression model is build with normalized data.
 
 ### Evaluation:
 
