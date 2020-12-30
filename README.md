@@ -30,14 +30,12 @@ It's a large file, thus it was separated into two files.
 
 ### Data preparation:
 #### Part I:
-
 To have an image of the spatial distribution of the average airbnb prices I chose the coordinate data "latitude" and "longitude".
 By rounding the numbers in these two columns to 2 digits, the accommodations can be grouped with same coordinates. 
 Since the price column is a string it has to be changed to a float. Before, the string has to be cleaned from non-convertable
 characters (e.g. $). 
 
 #### Part II: 
-
 In the calendar dataframe, all NAN were removed to just have the booked nights left with their prices. 
 In the two dataframes we got now, the airbnb id column name is different. Therefore, the "listing_id"-column in the dataframe is changed to "id". 
 Next, all bookings with the same id are grouped together and sumed up. So we have the income for the whole year for each 
@@ -47,7 +45,6 @@ With the use of a pivot-table the data are grouped. The value of the pivot-table
 Additionally the mean function was applied to calculate the average prices for accommodations with the same coordinates.
 
 #### Part III:
-
 To clean the data the function "clean_data" is used. This function takes a dataframe and a integer called "flag". The following step describe
 what the function is doing and why. 
 
