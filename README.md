@@ -3,7 +3,7 @@
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-    [- Bussiness and Data Understanding:](#B&DU)
+    -[Bussiness and Data Understanding:](#B&DU)
 4. [Results](#results)
 5. [Acknowledgements](#licensing)
 
