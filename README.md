@@ -3,7 +3,6 @@
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-    -[Bussiness and Data Understanding:](#B&DU)
 4. [Results](#results)
 5. [Acknowledgements](#licensing)
 
@@ -21,25 +20,25 @@ In this project I was interested in analysing an airbnb dataset of Seattle with 
 
 ## File Descriptions <a name="files"></a>
 
-Bussiness and Data Understanding:
+# Bussiness and Data Understanding:
 
 As mentioned above, the price is an important aspect on airbnb accommodations for the people who use an airbnb, but also for hosts it is 
-interesting to know what improvements can be done to increase the price and earnings. 
-The used data are two dataframes (listings and calendar) and can be downloaded here. The "calendar" file is a large file, thus it was 
-separated into two files. The dataframe "listings" has the shape of 3818 rows × 92 columns from which 61 columns have the type "object". 
-The rest are "int64" and "float64. Some columns contain NAN's. The calendar dataframe has the shape 1393570 rows × 4 columns and contains
+interesting to know what improvements can be done to increase their earnings. 
+The used data consists of two dataframes (listings and calendar) and can be downloaded here. The dataframe "listings" has the shape 
+of 3818 rows × 92 columns from which 61 columns have the type "object". The rest are "int64" and "float64. Some columns contain NAN's. 
+The "calendar" file is a large file, thus it was separated into two files which has the shape 1393570 rows × 4 columns and contains
 all bookings of all airbnb's during the year.
 
 Data preparation:
 
-PartI:
+Part I:
 
 To have an image of the spatial distribution of the average airbnb prices I chose the coordinate data "latitude" and "longitude".
 By rounding the numbers in these two columns to 2 digits, the accommodations can be grouped with same coordinates. 
 Since the price column is a string it has to be changed to a float. Before, the string has to be cleaned from non-convertable
 characters (e.g. $). 
 
-PartII: 
+Part II: 
 
 In the calendar dataframe, all NAN were removed to just have the booked nights left with their prices. 
 In the two dataframes we got now, the airbnb id column name is different. Therefore, the "listing_id"-column in the dataframe is changed to "id". 
