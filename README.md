@@ -73,12 +73,11 @@ The linear Regression model is build with normalized data.
 At the end the function "coef_weights" from the class of Udacity, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
 these coefficient are plotted in a bar plot. 
 
-
 ## Results<a name="results"></a>
 
 The main findings of the results can also be found [here](https://naefrico.medium.com/what-drives-prices-at-airbnb-accommodations-c60e4589a099).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-Must give credit to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/stackoverflow/so-survey-2017/data).  Otherwise, feel free to use the code here as you would like! 
+I thank airbnb for offering the data. You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/airbnb/seattle/data). You can also use the code here and run the model by yourself. Maybe you even have an idea for adjustments or improvements. 
 
