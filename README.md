@@ -33,7 +33,9 @@ It's a large file, thus it was separated into two files.
 To have an image of the spatial distribution of the average airbnb prices I chose the coordinate data "latitude" and "longitude".
 By rounding the numbers in these two columns to 2 digits, the accommodations can be grouped with same coordinates. 
 Since the price column is a string it has to be changed to a float. Before, the string has to be cleaned from non-convertable
-characters (e.g. $). 
+characters (e.g. $).
+
+
 
 #### Part II: 
 In the calendar dataframe, all NAN were removed to just have the booked nights left with their prices. 
@@ -55,7 +57,7 @@ what the function is doing and why.
     it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe.
     If the flag is set to 0, the amenities are not taken into the model. 
 2.  Some columns contain a "t" or "f". These are changed into 1 and 0 which are easier to handle.
-3.  As befor in Part II, the price columns have to be changed from strings to floats
+3.  As before in Part II, the price columns have to be changed from strings to floats
 4.  Similar as step 3 with the percentage column
 5.  All columns which contain the same element for all rows are dropped, since this columns are not delivering any information.
 6.  In contrast to step 5, there are also many object columns which contain a different element for each row such as "description" or the url
