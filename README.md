@@ -48,8 +48,8 @@ Additionally the mean function was applied to calculate the average prices for a
 
 Part III:
 
-To evaluate the importance of other features, a linear Regression model from the sklearn package has been used.
-The data had to be cleaned first with the function "clean_data". This function takes a dataframe and a integer called "flag".
+To clean the data the function "clean_data" is used. This function takes a dataframe and a integer called "flag". The following step describe
+what the function is doing and why. 
 
 1.  The first step is optional. If the flag variable is set to 1, the function "separator" is used. 
     This function will separate the column "amenities" into different columns. The problem with the "amenities" column is that there
@@ -57,7 +57,6 @@ The data had to be cleaned first with the function "clean_data". This function t
     only the "amenities" column packed into an ordered dataframe. This new dataframe has a column for each amenity. For all accommodations
     it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe.
     If the flag is set to 0, the amenities are not taken into the model. 
-
 2.  Some columns contain a "t" or "f". These are changed into 1 and 0 which are easier to handle.
 3.  As befor in Part II, the price columns have to be changed from strings to floats
 4.  Similar as step 3 with the percentage column
@@ -73,14 +72,14 @@ The data had to be cleaned first with the function "clean_data". This function t
 
 The return of the function are the X and y matrix.
 
-### Modeling:
+### Data Modeling:
 
 A linear Regression model is build with normalized data.
 
 ### Evaluation:
 
 The function "coef_weights" from the class of Udacity is used, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
-these coefficient are plotted in a bar plot. 
+these coefficient are plotted in a bar plot. The r-squared-score is about 0,56. 
 
 ## Results<a name="results"></a>
 
