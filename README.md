@@ -20,8 +20,7 @@ In this project I was interested in analysing an airbnb dataset of Seattle with 
 
 ## File Descriptions <a name="files"></a>
 
-#### Bussiness and Data Understanding:
-
+### Bussiness and Data Understanding:
 As mentioned above, the price is an important aspect on airbnb accommodations for the people who use an airbnb, but also for hosts it is 
 interesting to know what improvements can be done to increase their earnings. 
 The used data consists of two dataframes (listings and calendar) and can be downloaded here. The dataframe "listings" has the shape 
@@ -29,8 +28,7 @@ of 3818 rows × 92 columns from which 61 columns have the type "object". The res
 The "calendar" file is a large file, thus it was separated into two files which has the shape 1393570 rows × 4 columns and contains
 all bookings of all airbnb's during the year.
 
-Data preparation:
-
+### Data preparation:
 Part I:
 
 To have an image of the spatial distribution of the average airbnb prices I chose the coordinate data "latitude" and "longitude".
@@ -75,11 +73,11 @@ The data had to be cleaned first with the function "clean_data". This function t
 
 The return of the function are the X and y matrix.
 
-Modeling:
+### Modeling:
 
 A linear Regression model is build with normalized data.
 
-Evaluation:
+### Evaluation:
 
 The function "coef_weights" from the class of Udacity is used, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
 these coefficient are plotted in a bar plot. 
