@@ -20,7 +20,7 @@ In this project I was interested in analysing an airbnb dataset of Seattle with 
 
 ## File Descriptions <a name="files"></a>
 
-# Bussiness and Data Understanding:
+#### Bussiness and Data Understanding:
 
 As mentioned above, the price is an important aspect on airbnb accommodations for the people who use an airbnb, but also for hosts it is 
 interesting to know what improvements can be done to increase their earnings. 
