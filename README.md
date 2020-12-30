@@ -77,3 +77,8 @@ these coefficient are plotted in a bar plot.
 ## Results<a name="results"></a>
 
 The main findings of the results can also be found [here](https://naefrico.medium.com/what-drives-prices-at-airbnb-accommodations-c60e4589a099).
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+Must give credit to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/stackoverflow/so-survey-2017/data).  Otherwise, feel free to use the code here as you would like! 
+
