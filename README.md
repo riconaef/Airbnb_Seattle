@@ -23,62 +23,13 @@ In this project I was interested in analysing an airbnb dataset of Seattle with 
 ### Business and Data Understanding:
 As mentioned above, the price is an important aspect on airbnb accommodations for the people who use an airbnb, but also for hosts
 to know what improvements can be done to increase their earnings. 
-The used data consists of two dataframes (listings and calendar) and can be downloaded here. The dataframe "listings" has the shape 
-of 3818 rows × 92 columns from which 61 columns have the type "object". The rest are "int64" and "float64. Some columns contain NAN's. 
-The "calendar" dataframe contains all bookings of all airbnb's during the year and has the shape 1393570 rows × 4 columns. 
-It's a large file, thus it was separated into two files.
+The used data consists of two dataframes (listings and calendar) and can be downloaded here. The calendar dataframe is a large file, 
+thus it was separated into two files.
 
-### Data preparation:
-#### Part I:
-To have an image of the spatial distribution of the average airbnb prices I chose the coordinate data "latitude" and "longitude".
-By rounding the numbers in these two columns to 2 digits, the accommodations can be grouped with same coordinates. 
-Since the price column is a string it has to be changed to a float. Before, the string has to be cleaned from non-convertable
-characters (e.g. $).
+The steps of the analysis can be viewed in the Crisp_DM_
 
 
 
-#### Part II: 
-In the calendar dataframe, all NAN were removed to just have the booked nights left with their prices. 
-In the two dataframes we got now, the airbnb id column name is different. Therefore, the "listing_id"-column in the dataframe is changed to "id". 
-Next, all bookings with the same id are grouped together and sumed up. So we have the income for the whole year for each 
-accommodation. After the two dataframes are merged together on the id column. The obtained dataframe contains the total income per year and
-their location.
-With the use of a pivot-table the data are grouped. The value of the pivot-table is set to the price-column. 
-Additionally the mean function was applied to calculate the average prices for accommodations with the same coordinates.
-
-#### Part III:
-To clean the data the function "clean_data" is used. This function takes a dataframe and a integer called "flag". The following steps describe
-what the function is doing and why. 
-
-1.  The first step is optional. If the flag variable is set to 1, the function "separator" is used. 
-    This function will separate the column "amenities" into different columns. The problem with the "amenities" column is that there
-    are plenty of variables packed into one string for each row, without any order. The function returns a new dataframe containing 
-    only the "amenities" column packed into an ordered dataframe. This new dataframe has a column for each amenity. For all accommodations
-    it shows wether this particular amenity is available or not. This dataframe is concatenated with the original dataframe.
-    If the flag is set to 0, the amenities are not taken into the model. 
-2.  Some columns contain a "t" or "f". These are changed into 1 and 0 which are easier to handle.
-3.  As before in Part II, the price columns have to be changed from strings to floats
-4.  Similar as step 3 with the percentage column
-5.  All columns which contain the same element for all rows are dropped, since this columns are not delivering any information.
-6.  In contrast to step 5, there are also many object columns which contain a different element for each row such as "description" or the url
-    of the website. Here, these informations are not further handled and therefore all remaining object columns were dropped.
-7.  If any accommodations have no price values, these rows are dropped. y is created
-8.  Drop all columns which have more than 75% NAN.
-9.  Drop all price columns. There are two other price columns, the "weekly_price" and "monthly_price", which are not further considered here.
-    Additionally, the columns "host_listing_count" and "host_total_listings_count" are dropped, because these cause difficulties with the 
-    machine learning algorithm later. The reason for it might be that these data contain some very high values compared to others (outliers).
-10. For the final step, all NAN's in the int and float columns are filled with the average of their column. 
-
-The return of the function are the X and y matrix.
-
-### Data Modeling:
-
-For Part III a linear Regression model is build with normalized data.
-
-### Evaluation:
-
-The function "coef_weights" from the class of Udacity is used, which returns a dataframe of the coefficients for each feature. To have a better visualization, 
-these coefficient are plotted in a bar plot. The r-squared-score is about 0,56. 
 
 ## Results<a name="results"></a>
 
