@@ -11,9 +11,9 @@
 The code should run in Python 3 with no problems. No additional packages are needed. 
 
 Follwoing are the used libraries:
-  numpy
-  pandas
-  seaborn
+ - numpy
+ - pandas
+ - seaborn
   matplotlib.pyplot
   LinearRegression from sklearn.linear_model
   train_test_split from sklearn.model_selection 
