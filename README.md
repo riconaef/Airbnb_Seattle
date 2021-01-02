@@ -20,9 +20,6 @@ In this project I was interested in analysing an airbnb dataset of Seattle with 
 
 ## File Descriptions <a name="files"></a>
 
-### Business and Data Understanding:
-As mentioned above, the price is an important aspect on airbnb accommodations for the people who use an airbnb, but also for hosts
-to know what improvements can be done to increase their earnings. 
 The used data consists of two dataframes (listings and calendar) and can be downloaded here. The calendar dataframe is a large file, 
 thus it was separated into two files.
 
