@@ -12,11 +12,17 @@ The code should run in Python 3 with no problems. No additional packages are nee
 
 Follwoing are the used libraries:
 numpy
+
 pandas
+
 seaborn
+
 matplotlib.pyplot
+
 LinearRegression from sklearn.linear_model
+
 train_test_split from sklearn.model_selection 
+
 r2_score, mean_squared_error from sklearn.metrics
 
 ## Project Motivation<a name="motivation"></a>
