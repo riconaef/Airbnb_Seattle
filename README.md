@@ -26,10 +26,7 @@ to know what improvements can be done to increase their earnings.
 The used data consists of two dataframes (listings and calendar) and can be downloaded here. The calendar dataframe is a large file, 
 thus it was separated into two files.
 
-The steps of the analysis can be viewed in the Crisp_DM_
-
-
-
+The steps of the analysis can be viewed in the Crisp_DM_history.ipynb file. There is also a single jupyter file for each question to generate the desired plots.
 
 ## Results<a name="results"></a>
 
